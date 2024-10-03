@@ -53,11 +53,12 @@ export const EXTRANAVLINKS: NAVLINKTYPE = [
 export const NEWS: NEWSTYPES = [
   {
     id: "",
-    title: "The End Of PAPAKHAN?",
+    title: "Ai Has Indulged Clothing Industry",
     smallDescription:
       "Papa Khan announces the end of his decade-long music career",
-    thumbnail: "",
-    date: "",
+    thumbnail:
+      "https://i.pinimg.com/736x/90/cf/e6/90cfe6ee75389e0ef7c73b4c5c1480d5.jpg",
+    date: "Thursday, October 3, 2024",
     content: "",
   },
 ];
