@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         NOTO: "Noto Sans",
+        PLAYFAIRE: "Playfair Display",
       },
       colors: {
         uvibeReb: "#F22A2A",

@@ -8,6 +8,7 @@ import { GrFormClose } from "react-icons/gr";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { TbHours12, TbMenu } from "react-icons/tb";
 import MyLogo from "../brand/MyLogo";
+import { ModeToggle } from "../ui/ModeToggle";
 
 const NavigationMobile = () => {
   const [show, setShow] = useState(false);
@@ -25,7 +26,7 @@ const NavigationMobile = () => {
         <div>
           <MyLogo />
         </div>
-        <div>
+        <div className=" flex items-center">
           <div
             onClick={() => {
               setShow(!show);
@@ -36,6 +37,9 @@ const NavigationMobile = () => {
             )}
           >
             {show ? <GrFormClose size={15} /> : <TbMenu size={15} />}
+          </div>
+          <div>
+            <ModeToggle />
           </div>
         </div>
       </div>

@@ -16,6 +16,7 @@ export default function Home() {
         </div>
       </div>
       <Hero />
+      <div className=" h-[300vh]" />
     </div>
   );
 }
