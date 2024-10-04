@@ -9,15 +9,15 @@ const Hero = () => {
     <div className=" relative overflow-hidden ">
       <div className=" max-w-screen-xl blur-3xl rounded-full absolute w-full -top-10 bg-gradient-to-t from-background to-uvibeReb/50 h-56  left-1/2 -translate-x-1/2" />
       <div className="  max-w-screen-2xl relative z-20 mx-auto  mt-10 rounded-xl p-10 pt-32 ">
-        <div className=" md:text-6xl text-2xl text-center  font-PLAYFAIRE  font-semibold uppercase   ">
+        <div className=" md:text-6xl text-2xl text-center md:text-start  font-PLAYFAIRE  font-semibold uppercase   ">
           Helping you find your perfect style / With{" "}
           <span className=" text-uvibeReb">UVIBE</span>, Never to worry again
         </div>
-        <div className=" md:text-sm text-center text-xs opacity-75 max-w-md mt-2 font-NOTO">
+        <div className=" md:text-sm text-center md:text-start text-xs opacity-75 max-w-md mt-2 font-NOTO">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio?
           Aliquam molestias aliquid fugiat impedit.
         </div>
-        <div className=" mt-7 flex justify-center  flex-col items-center  ">
+        <div className=" mt-7 flex justify-center md:justify-start  flex-col md:flex-row md:gap-4 items-center  ">
           <a href="">
             <div
               className={buttonVariants({
@@ -33,7 +33,7 @@ const Hero = () => {
               </div>
             </div>
           </a>
-          <div className=" font-NOTO text-xs opacity-75 mt-2">
+          <div className=" font-NOTO text-xs opacity-75 mt-2 md:mt-0">
             1237 Waiter Joined
           </div>
         </div>

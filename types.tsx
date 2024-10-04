@@ -19,3 +19,8 @@ export type PICTYPE = {
   date: string;
   location: string;
 }[];
+
+export type QATYPE = {
+  question: string;
+  answer: string | ReactNode;
+}[];

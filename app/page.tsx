@@ -1,22 +1,35 @@
 import Hero from "@/components/marketing/Hero";
 import Navigation from "@/components/marketing/Navigation";
 import NavigationMobile from "@/components/marketing/NavigationMobile";
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import QuestionAnswerSec from "@/components/marketing/QuestionAnswerSec";
+import LenisProvider from "@/components/provider/LenisProv";
+import SectionTrans from "@/components/provider/SectionTrans";
 
 export default function Home() {
   return (
-    <div>
+    <LenisProvider>
       <div>
+        <div>
+          <div className=" md:block hidden">
+            <Navigation />
+          </div>
+          <div className=" md:hidden block">
+            <NavigationMobile />
+          </div>
+        </div>
         <div className=" md:block hidden">
-          <Navigation />
+          <SectionTrans
+            sectionOne={<Hero />}
+            sectionTwo={<QuestionAnswerSec />}
+          />
         </div>
-        <div className=" md:hidden block">
-          <NavigationMobile />
+        <div className=" block md:hidden">
+          <Hero />
+          <QuestionAnswerSec />
         </div>
+
+        <div className=" h-[300vh]" />
       </div>
-      <Hero />
-      <div className=" h-[300vh]" />
-    </div>
+    </LenisProvider>
   );
 }
