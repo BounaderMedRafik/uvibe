@@ -1,5 +1,5 @@
 "use client";
-import { EXTRANAVLINKS, NAVLINKS, NEWS } from "@/data";
+import { EXTRANAVLINKS, important, NAVLINKS, NEWS } from "@/data";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -15,7 +15,7 @@ const Navigation = () => {
   return (
     <motion.div
       initial={{
-        y: -76,
+        y: -60,
       }}
       animate={{
         y: 0,
@@ -209,19 +209,18 @@ const LastNews = ({
 
 const Important = () => {
   return (
-    <Link href={"/"} className=" group">
+    <Link href={important.link} className=" group">
       <div className=" bg-foreground h-56 overflow-hidden   mt-1.5 rounded-lg relative border border-uvibeReb">
-        <div className=" absolute  w-full h-full bg-background/75 opacity-0 group-hover:opacity-100 transition-all z-20 p-2 flex items-start justify-end flex-col">
-          <div className=" font-semibold">UVIBE v0.2</div>
+        <div className="  absolute  w-full h-full bg-gradient-to-t from-background to-transparent md:bg-background/75 opacity-0 group-hover:opacity-100 transition-all z-20 p-2 flex items-start justify-end flex-col">
+          <div className=" font-semibold">{important.title}</div>
           <div className=" text-xs opacity-75 -mb-[100%] group-hover:mb-0 transition-all duration-300">
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
-            adipisicing. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit.
+            {important.description}
           </div>
         </div>
         <img
-          src="https://i.pinimg.com/564x/61/d3/a3/61d3a39b8f00de84e1586fcbea82d2bd.jpg"
-          alt=""
+          className=" w-full h-full object-cover object-center"
+          src={important.image}
+          alt={important.title}
         />
       </div>
     </Link>

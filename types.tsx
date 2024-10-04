@@ -13,3 +13,9 @@ export type NEWSTYPES = {
   date: string;
   content: ReactNode;
 }[];
+
+export type PICTYPE = {
+  pic: string;
+  date: string;
+  location: string;
+}[];
