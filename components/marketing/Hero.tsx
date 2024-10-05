@@ -7,7 +7,8 @@ import { buttonVariants } from "../ui/button";
 const Hero = () => {
   return (
     <div className=" relative overflow-hidden ">
-      <div className=" max-w-screen-xl blur-3xl rounded-full absolute w-full -top-10 bg-gradient-to-t from-background to-uvibeReb/50 h-56  left-1/2 -translate-x-1/2" />
+      <div className=" max-w-screen-xl blur-3xl rounded-full absolute z-10 w-full -top-10 bg-gradient-to-t from-background to-uvibeReb/50 h-56  left-1/2 -translate-x-1/2" />
+      {/* <div className="  bg-white max-w-3xl  shadow shadow-white opacity-75  rounded-b-full w-full absolute  z-20  top-0 h-1.5 left-1/2 -translate-x-1/2" /> */}
       <div className="  max-w-screen-2xl relative z-20 mx-auto  mt-10 rounded-xl p-10 pt-32 ">
         <div className=" md:text-6xl text-2xl text-center md:text-start  font-PLAYFAIRE  font-semibold uppercase   ">
           Helping you find your perfect style / With{" "}

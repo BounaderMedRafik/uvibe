@@ -16,7 +16,7 @@ const NavigationMobile = () => {
   return (
     <div
       className={cn(
-        "  w-full fixed top-0 left-0 z-50 transition-all  ",
+        "  w-screen fixed top-0 left-0 z-50 transition-all  ",
         show
           ? "border-none border-transparent"
           : " border-b border-foreground/10"
@@ -24,7 +24,7 @@ const NavigationMobile = () => {
     >
       <div className="flex items-center  justify-between w-full px-4 py-2 bg-background relative z-50">
         <div>
-          <MyLogo />
+          <MyLogo big={false} />
         </div>
         <div className=" flex items-center">
           <div

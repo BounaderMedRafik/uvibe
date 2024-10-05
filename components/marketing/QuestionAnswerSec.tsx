@@ -31,7 +31,7 @@ const QuestionAnswerSec = () => {
           Frequent <span className=" text-uvibeReb"> Questions </span>
           With Specific Answers
         </div>
-        <div className=" w-full mt-5">
+        <div className=" w-full mt-5 overflow-hidden">
           <LayoutGroup>
             {QADATA.map((item, i) => (
               <motion.div
@@ -82,14 +82,15 @@ const QATEMP = ({
       initial={false}
       onClick={() => setExpanded(isOpen ? false : index)}
       className={cn(
-        "flex cursor-pointer flex-col py-4  select-none",
-        index === 0 && "pt-3 sm:pt-4"
+        "flex cursor-pointer flex-col py-4 opacity-75 hover:opacity-100  select-none",
+        index === 0 && "pt-3 sm:pt-4",
+        isOpen ? " opacity-100" : null
       )}
     >
       <motion.h2
         className={cn(
-          "text-lg md:text-2xl font-NOTO flex items-center justify-between py-2 transition-all duration-300  ",
-          isOpen ? " px-5 bg-foreground/10 rounded-t-2xl" : null
+          "text-lg md:text-2xl  font-NOTO flex items-center justify-between py-2 transition-all duration-300  ",
+          isOpen ? " px-5 bg-foreground/10 rounded-t-2xl " : null
         )}
       >
         <div> {question}</div>

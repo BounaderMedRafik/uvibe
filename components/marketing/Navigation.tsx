@@ -9,6 +9,8 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { TbHours12, TbMenu } from "react-icons/tb";
 import MyLogo from "../brand/MyLogo";
 import { ModeToggle } from "../ui/ModeToggle";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
@@ -27,7 +29,7 @@ const Navigation = () => {
     >
       <div className="flex relative bg-background  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] items-center gap-14 px-4 py-2 border border-foreground/10 rounded-xl">
         <div>
-          <MyLogo />
+          <MyLogo big={false} />
         </div>
         <div className="flex items-center gap-1">
           <div className="flex items-center gap-1 mt-0.5">
@@ -40,6 +42,16 @@ const Navigation = () => {
               </a>
             ))}
           </div>
+          {/* <div>
+            <Button variant={"primary"}>
+              <div className="flex items-center  gap-2">
+                <div>SIGN IN</div>
+                <div>
+                  <ArrowRight size={14} />
+                </div>
+              </div>
+            </Button>
+          </div> */}
           <div
             onClick={() => {
               setShow(!show);

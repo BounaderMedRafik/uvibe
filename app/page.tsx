@@ -1,3 +1,4 @@
+import Footer from "@/components/marketing/Footer";
 import Hero from "@/components/marketing/Hero";
 import Navigation from "@/components/marketing/Navigation";
 import NavigationMobile from "@/components/marketing/NavigationMobile";
@@ -28,7 +29,9 @@ export default function Home() {
           <QuestionAnswerSec />
         </div>
 
-        <div className=" h-[300vh]" />
+        <Footer />
+
+        {/* <div className=" h-[300vh]" /> */}
       </div>
     </LenisProvider>
   );
