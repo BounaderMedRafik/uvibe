@@ -14,8 +14,11 @@ const MyLogo = ({ big }: { big: boolean }) => {
         </>
       ) : (
         <>
-          <div className="">
-            <img className=" w-96 " src="/UVIBEWORK-WhiteText.svg" alt="" />
+          <div className=" dark:block hidden">
+            <img className=" w-24 " src="/UVIBEWORK-WhiteText.svg" alt="" />
+          </div>
+          <div className=" dark:hidden block">
+            <img className=" w-24 " src="/UVIBEWORK-BlackText.svg" alt="" />
           </div>
         </>
       )}

@@ -64,7 +64,7 @@ const NewestStory = () => {
         <div className="flex items-center gap-2 mt-4">
           <div className=" text-xs ">STORY</div>
           <div className=" w-full h-px bg-foreground  " />
-          <Link href={"/"}>
+          <Link href={"/stories"}>
             <div className=" flex items-center gap-2 opacity-50 hover:opacity-75 transition-all">
               <div className=" text-xs ">ALL</div>
               <div>

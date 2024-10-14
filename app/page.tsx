@@ -10,14 +10,6 @@ export default function Home() {
   return (
     <LenisProvider>
       <div>
-        <div>
-          <div className=" md:block hidden">
-            <Navigation />
-          </div>
-          <div className=" md:hidden block">
-            <NavigationMobile />
-          </div>
-        </div>
         <div className=" md:block hidden">
           <SectionTrans
             sectionOne={<Hero />}
@@ -28,9 +20,6 @@ export default function Home() {
           <Hero />
           <QuestionAnswerSec />
         </div>
-
-        <Footer />
-
         {/* <div className=" h-[300vh]" /> */}
       </div>
     </LenisProvider>
